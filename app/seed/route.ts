@@ -1,4 +1,6 @@
-import bcrypt from 'bcrypt';
+import { NextResponse } from 'next/server';
+//import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import postgres from 'postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
@@ -110,8 +112,15 @@ export async function GET() {
       seedRevenue(),
     ]);
 
-    return Response.json({ message: 'Database seeded successfully' });
+    return NextResponse.json(
+      { message: 'Database seeded successfully' },
+      { status: 200 },
+    );
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    console.error('Error seeding database:', error);
+    return NextResponse.json(
+      { error: 'Failed to seed database' },
+      { status: 500 },
+    );
   }
 }
