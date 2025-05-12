@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Page() {
     return (
     <>
@@ -5,10 +7,12 @@ export default function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* Image Section */}
         <div>
-          <img
-            className="rounded-lg shadow-md w-full"
+          <Image
             src="/laptop_work.jpg"
-            alt="Laptop Work"
+            width={1000}
+            height={760}
+            className="hidden md:block"
+            alt="Screenshots of the dashboard project showing desktop version"
           />
         </div>
 
