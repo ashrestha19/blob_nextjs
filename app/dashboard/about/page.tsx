@@ -6,7 +6,7 @@ export default function Page() {
       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <Image
-            src="/hero-desktop.png"
+            src="/hero-group.png"
             width={1000}
             height={760}
             className="hidden md:block"
