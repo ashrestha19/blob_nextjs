@@ -28,7 +28,7 @@ const links = [
     href: '/dashboard/about',
     icon: VariableIcon,
   },
-  { name: 'Client', href: '/dashboard/customers', icon: UserIcon  },
+  { name: 'Client', href: '/dashboard/clients', icon: UserIcon  },
   { name: 'Candidates', href: '/dashboard/candidates', icon: UserGroupIcon },
   { name: 'Jobs', href: '/dashboard/jobs', icon: ReceiptPercentIcon },
 ];

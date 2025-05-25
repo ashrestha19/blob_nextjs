@@ -6,8 +6,8 @@ export default function SafaltaLogo() {
     <div
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
     >
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[44px]">Safalta Services</p>
+      {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg] text-emerald-500" /> */}
+      <p className="text-[44px] ">Safalta Services</p>
     </div>
   );
 }
